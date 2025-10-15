@@ -1,31 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Honk&family=Lobster&family=Nosifer&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
     <title>Mi primera página!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style = "background-color: #33ECFF;"></body>
+  <style> 
+  /*Estilo del titulo*/
+      h1{
+        font-size: 28px;
+        font-family: "Playwrite DE SAS", cursive;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        text-align: center;
+      }
+/*Estilo del texto*/
+      .texto{
+        font-size: 20px;
+        font-family: "Playwrite DE SAS", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-align: justify;
+      }
+/*Estilo de las fotos*/      
+      .foto{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px; /* bordes redondeados */
+        display: block;/*Segun google sirve para centrar las imagenes mejor*/
+      }
+/*Estilo de la lista*/   
+  .lista {
+    font-size: 40px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
+  /*Estilo de los subtitulos*/
+  
+    h2 {
+      font-family: "Merienda", cursive;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+    </style>
   <body>
-      <h1 style="color: #00000;">Presentandome en programacion web</h1>
-      <h2 style="color: #101A9E;">Lo que espero</h2>
-      <p> ¡Hola que tal!, soy Josué Gibrán e ingresé a esta carrera debido a que, en parte siempre me intersó el tema de las computadoras y como es que esta construida ya
+      <h1>Presentandome en programacion web</h1>
+
+      <h2>Lo que espero</h2>
+      <p class="texto";> ¡Hola que tal!, soy Josué Gibrán e ingresé a esta carrera debido a que, en parte siempre me intersó el tema de las computadoras y como es que esta construida ya
       sea el hardware o software. Por otra parte también fue el hecho que desde pequeño jugaba videojuegos y pasaba mucho tiempo pegado al celular o
       a la computadora. Espero como mínimo aprender la lógica detras de la programación para poder desenvolverme en multiples lenguajes y eventualmente
       centrarme en uno. Además me gustaría poder desarrollar pogramas para lo que necesite. </p>
       <br>
       <h2> Mis Artistas faoritos:</h2>
-      <li> Artic Monkeys </li>
-      <img src= "https://tse4.mm.bing.net/th/id/OIP.iXNx4QDRZ8lC6B_PdRcT5QHaEh?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"/>
+      <li class="lista"> Artic Monkeys </li>
+      <img src= "https://tse4.mm.bing.net/th/id/OIP.iXNx4QDRZ8lC6B_PdRcT5QHaEh?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="foto"/>
       <br>
-      <li> Enjambre </li>
-      <img src= "https://i.redd.it/tmmo8scukdhc1.jpeg"/>
+      <li class="lista"> Enjambre </li>
+      <img src= "https://i.redd.it/tmmo8scukdhc1.jpeg"
+            class="foto"/>
       <br>
-      <li> Unlike Pluto </li>
-      <img src= "https://tse1.mm.bing.net/th/id/OIP.IBHKQt6MZ7LqeW6tow6feQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"/>
+      <li class="lista"> Unlike Pluto</li>
+      <img src= "https://tse1.mm.bing.net/th/id/OIP.IBHKQt6MZ7LqeW6tow6feQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="foto"/>
       
       <script src="script.js"></script>
-      
-      <table border="2">
+
+        <style> 
+            table{
+                width: 400px;     /* ancho tabla */
+                border-collapse: collapse;
+                margin: left;
+                border: 4px solid rgb(0, 0, 0);
+            }
+              th, td {
+                border: 2px solid #000000;    /* borde */
+                padding: 7px;             /* espacio interno */
+                text-align: center;       /* alinea texto */
+              }
+              
+              th {
+              background-color: #a202a2;
+              color: rgb(236, 222, 222);
+              }
+        </style>
+      <table>
         <tr>
           <th>Grupo 1</th>
           <th>J</th>
@@ -87,5 +171,58 @@
         </tr>
         
       </table>
+
+  <div class="formulario">
+    
+        <h2>Formulario de satisfacción</h2>
+        <p class="texto"> Por favor rellene el formulario honestamente</p>
+        
+    <form action="Procesar formulario" method="post"> 
+        <label for="nombre">Nombre:</label> <!--Texto basico para un formulario-->
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        <br><br>
+
+        <!-- Correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        <br><br>
+   
+        <!-- Mensaje -->
+        <label for="mensaje">Si tiene algún comentario para mejorar la página no dude en escribirlo:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí"></textarea>
+        <br><br>
+
+        <!-- Botón enviar -->
+        <button type="submit">Enviar</button>
+
+      </form>
+  </div>
+  <br><br>
+   
+  <p class="texto";> De una vez paso a promocionar las cositas que hago en mi tiempo libre:</p>
+  <iframe width="450" height="300"
+    src="https://www.youtube.com/embed/mNQ3CCLAuf0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>/*Se usa iframe para insertar videos de youtube*/</iframe>
+  
+  <div style="text-align:left;">
+    <blockquote class="tiktok-embed" 
+      cite="https://www.tiktok.com/@zhakleer/video/7560465334835105042" 
+      data-video-id="7560465334835105042" 
+      style="max-width: 450px;min-width: 300px;margin: =0;float=left;">
+        <section>
+          <a target="_blank" 
+          title="@zhakleer" 
+          href="https://www.tiktok.com/@zhakleer?refer=embed">@zhakleer
+          </a> Sink Into Oblivion - Yu-Peng Chen <a title="pianocover" target="_blank" href="https://www.tiktok.com/tag/pianocover?refer=embed">#pianocover</a>  <a title="piano" target="_blank" href="https://www.tiktok.com/tag/piano?refer=embed">#piano</a>  <a title="sinkintooblivion" target="_blank" href="https://www.tiktok.com/tag/sinkintooblivion?refer=embed">#sinkintooblivion</a>  <a title="genshinimpactost" target="_blank" href="https://www.tiktok.com/tag/genshinimpactost?refer=embed">#GenshinImpactOST</a> <a title="enkanomiya" target="_blank" href="https://www.tiktok.com/tag/enkanomiya?refer=embed">#Enkanomiya</a> <a target="_blank" title="♬ sonido original - Zhakleer" href="https://www.tiktok.com/music/sonido-original-7560465433883675408?refer=embed">♬ sonido original - Zhakleer</a> 
+        </section> 
+    </blockquote> 
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </div>
+
+  <br>
+    
   </body>
 </html>
